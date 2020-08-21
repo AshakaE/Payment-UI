@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+        <title>Payment UI</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container__head">
+                <div class="container__head-box">
+                    <img class="container__head_logo" src="./assets/img/AE.png" alt="CoralPay">
+                    <div class="container__head-box--amount">
+                        <h4>
+                            Pay
+                        </h4>
+                        <p>
+                            NGN 250,000
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__tab">
+                <div class="container__tab--1" id="card">
+                    <a class="card-option" href="#">CARD</a>
+
+                </div>
+                <div class="container__tab--1" id="bank">
+                    <a class="bank-option" href="#">BANK</a>
+                </div>
+                <div class="container__tab--1" id="ussd">
+                    <a class="ussd-option" href="#">USSD</a>
+                </div>
+            </div>
+            <div id="tabIn" class="container__tabIndicator">
+                <h1 class="tab-pill">&nbsp;
+                </h1>
+            </div>
+            <div class="container__sub">
+                <div class="method">
+                    <div class="method__card">
+                        <h2>Enter your card details</h2>
+                        <div class="method__card--1">
+                            <input id="cc" type="text" class="ccinput input" name="Card Number" placeholder="Card Number" maxlength="19" data-mask="0000 0000 0000 0000 000">
+                        </div>
+                        <div class="method__card--2">
+                            <div>
+                                <input id="cvv" type="text" class="input" name="Expiry Date" placeholder="mm / yy" data-mask="00 / 00">
+                            </div>
+                            <p>&nbsp;</p>
+                            <div>
+                                <input type="text" class="input2" name="CVV" placeholder="###" data-mask="000">
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a class="btn__text" href="#">Pay</a>
+                        </div>
+                    </div>
+                    <div class="method__bank">
+                        <h2>Select Bank:</h2>
+                        <div class="method__bank--1">
+                            <select name="Select Bank" id="Select-bank">
+                                <option value="" selected>--- Please choose an option ---</option>
+                                <option value="">Access Bank</option>
+                                <option value="">Ecobank</option>
+                                <option value="">FCMB</option>
+                                <option value="">Fidelity Bank</option>
+                                <option value="">FirstBank</option>
+                                <option value="">Guaranty Trust Bank (GTB)</option>
+                                <option value="">Keystone Bank</option>
+                                <option value="">Rubies(Highstreet) MFB</option>
+                                <option value="">Stanbic IBTC</option>
+                                <option value="">Sterling Bank</option>
+                                <option value="">UBA</option>
+                                <option value="">Unity Bank</option>
+                                <option value="">VFD MFB</option>
+                                <option value="">Wema Bank</option>
+                                <option value="">Zenith Bank</option>
+                            </select>
+                        </div>
+                        <div class="method__bank--2">
+                            <input type="text" class="input" name="Account Number" placeholder="Account Number" data-mask="0000000000">
+                        </div>
+                        <div class="btn">
+                            <a class="btn__text" href="#">Pay</a>
+                        </div>
+                    </div>
+                    <div class="method__ussd">
+                        <h2>Select Bank:</h2>
+                        <div class="method__ussd--1">
+                            <select name="Select Bank" id="Select-bank">
+                                <option value="" selected>--- Please choose an option ---</option>
+                                <option value="">Access Bank</option>
+                                <option value="">Ecobank</option>
+                                <option value="">FCMB</option>
+                                <option value="">Fidelity Bank</option>
+                                <option value="">FirstBank
+                                </option>
+                                <option value="">Guaranty Trust Bank (GTB)</option>
+                                <option value="">Keystone Bank
+                                </option>
+                                <option value="">Rubies(Highstreet) MFB</option>
+                                <option value="">Stanbic IBTC</option>
+                                <option value="">Sterling Bank</option>
+                                <option value="">UBA</option>
+                                <option value="">Unity Bank</option>
+                                <option value="">VFD MFB</option>
+                                <option value="">Wema Bank</option>
+                                <option value="">Zenith Bank</option>
+                            </select>
+                        </div>
+                        <div class="method__ussd--2">
+                            <h1>&nbsp;</h1>
+                        </div>
+                        <div class="btn">
+                            <a class="btn__dial" href="tel://">Click to dial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__foot">
+                <div class="container__foot--item">
+                    <p>Secured by
+                        <span>Ashaka</span>
+                    </p>
+                    <i class="fas fa-lock-alt"></i>
+                </div>
+                <script src="js/script.js"></script>
+                <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+            </body>
+        </html>
+    </body>
+</html>
+
